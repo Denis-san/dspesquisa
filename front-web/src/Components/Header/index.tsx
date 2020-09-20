@@ -5,6 +5,7 @@ import './styles.css';
 
 const Header = () => (
     <header className="main-header">
+      
       <Link to="/">
            <Logo />
       </Link>
@@ -14,9 +15,11 @@ const Header = () => (
         <div className="logo-text">
               <span className="logo-text-1">Big Game</span>
               <span className="logo-text-2"> Survey</span>
-
         </div>
       </Link>
+      <div className="owner-text">
+        <span className="text-owner">By Denis</span>
+        </div>
     </header>
 );
 
