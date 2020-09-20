@@ -8,7 +8,7 @@ import {
   Play_700Bold
 } from '@expo-google-fonts/play';
 import Header from './src/Components/Header';
-import Home from './src/pages/Home';
+import Routes from './src/routes';
 
 
 export default function App() {
@@ -23,8 +23,7 @@ export default function App() {
   } else {
       return (
         <View style={styles.container}>
-         <Header />
-         <Home />
+         <Routes />
           <StatusBar style="auto" />
         </View>
     );
@@ -33,7 +32,6 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#0B1F34',
     flex: 1,
   }
 
